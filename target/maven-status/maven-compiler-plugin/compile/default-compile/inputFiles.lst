@@ -1,8 +1,11 @@
-D:\6th semester\web\Java_ecommerce\cipherGaming\src\main\java\com\mycompany\ciphergaming\servlets\RegisterServlet.java
-D:\6th semester\web\Java_ecommerce\cipherGaming\src\main\java\com\mycompany\ciphergaming\servlets\LoginServlet.java
-D:\6th semester\web\Java_ecommerce\cipherGaming\src\main\java\com\mycompany\ciphergaming\entities\User.java
-D:\6th semester\web\Java_ecommerce\cipherGaming\src\main\java\com\mycompany\ciphergaming\entities\Product.java
-D:\6th semester\web\Java_ecommerce\cipherGaming\src\main\java\com\mycompany\ciphergaming\entities\Category.java
-D:\6th semester\web\Java_ecommerce\cipherGaming\src\main\java\com\mycompany\ciphergaming\dao\UserDao.java
-D:\6th semester\web\Java_ecommerce\cipherGaming\src\main\java\com\mycompany\ciphergaming\helper\FactoryProvider.java
-D:\6th semester\web\Java_ecommerce\cipherGaming\src\main\java\com\mycompany\ciphergaming\servlets\LogoutServlet.java
+G:\Java_cipherGaming-master\src\main\java\com\mycompany\ciphergaming\servlets\LoginServlet.java
+G:\Java_cipherGaming-master\src\main\java\com\mycompany\ciphergaming\dao\UserDao.java
+G:\Java_cipherGaming-master\src\main\java\com\mycompany\ciphergaming\entities\Category.java
+G:\Java_cipherGaming-master\src\main\java\com\mycompany\ciphergaming\entities\Product.java
+G:\Java_cipherGaming-master\src\main\java\com\mycompany\ciphergaming\entities\User.java
+G:\Java_cipherGaming-master\src\main\java\com\mycompany\ciphergaming\servlets\LogoutServlet.java
+G:\Java_cipherGaming-master\src\main\java\com\mycompany\ciphergaming\dao\CategoryDao.java
+G:\Java_cipherGaming-master\src\main\java\com\mycompany\ciphergaming\helper\FactoryProvider.java
+G:\Java_cipherGaming-master\src\main\java\com\mycompany\ciphergaming\dao\ProductDao.java
+G:\Java_cipherGaming-master\src\main\java\com\mycompany\ciphergaming\servlets\ProductOperationServlet.java
+G:\Java_cipherGaming-master\src\main\java\com\mycompany\ciphergaming\servlets\RegisterServlet.java
