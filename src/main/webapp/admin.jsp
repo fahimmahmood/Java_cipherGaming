@@ -3,6 +3,8 @@
     Created on : Dec 28, 2020, 8:07:06 PM
     Author     : ASUS
 --%>
+<%@page import="java.util.Map"%>
+<%@page import="com.mycompany.ciphergaming.helper.Helper"%>
 <%@page import="java.util.List"%>
 <%@page import="com.mycompany.ciphergaming.entities.Category"%>
 <%@page import="com.mycompany.ciphergaming.dao.CategoryDao"%>
@@ -26,7 +28,10 @@
 
 %>
 
-
+<%                                CategoryDao cdao = new CategoryDao(FactoryProvider.getFactory());
+    List<Category> list = cdao.getCategories();
+    Map<String,Long> m = Helper.getCounts(FactoryProvider.getFactory());
+%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -36,10 +41,10 @@
         <title>Admin User Panel</title>
         <%@include file="components/common_css_js.jsp" %>
         <script>
-            function hidediv(){
-                document.getElementById("hidediv").style.display="none";
+            function hidediv() {
+                document.getElementById("hidediv").style.display = "none";
             }
-            setTimeout("hidediv()",6000);
+            setTimeout("hidediv()", 6000);
         </script>
     </head>
     <body>
@@ -66,7 +71,7 @@
                             <div class="container">
                                 <img src="img/user.png" alt="user_icon" class="img-fluid rounded-circle" style="max-width: 130px;">
                             </div>
-                            <h1>2342</h1>
+                            <h1><%=m.get("userCount")%></h1>
                             <h1 class="text-muted">Users</h1>
 
                         </div>
@@ -86,7 +91,7 @@
                             <div class="container">
                                 <img src="img/categorylist.png" alt="product_list_icon" class="img-fluid rounded-circle" style="max-width: 130px;">
                             </div>
-                            <h1>1593</h1>
+                            <h1><%= list.size()%></h1>
                             <h1 class="text-muted">Categories</h1>
 
                         </div>
@@ -105,7 +110,7 @@
                             <div class="container">
                                 <img src="img/product.png" alt="shipping_icon" class="img-fluid rounded-circle" style="max-width: 130px;">
                             </div>
-                            <h1>2342</h1>
+                            <h1><%=m.get("productCount")%></h1>
                             <h1 class="text-muted">Products</h1>
 
                         </div>
@@ -219,9 +224,9 @@
                     <div class="modal-body">
 
                         <form action="ProductOperationServlet" method="POST" enctype="multipart/form-data">
-                            
+
                             <input type="hidden" name="operation" value="addProduct"/>
-                            
+
                             <div class="form-group">
 
                                 <input type="text" class="form-control" placeholder="Enter title of product" name="pName" required/>
@@ -252,10 +257,7 @@
 
                             </div>
 
-                            <%                                CategoryDao cdao = new CategoryDao(FactoryProvider.getFactory());
-                                List<Category> list = cdao.getCategories();
-
-                            %>
+                            //
 
                             <div class="form-group">
                                 <label for="catId">Select category of the product :</label>
@@ -296,7 +298,7 @@
             </div>
         </div>
 
-
+        <%@include file="components/common_modals.jsp" %>
 
     </body>
 </html>

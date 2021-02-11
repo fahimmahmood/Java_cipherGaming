@@ -1,11 +1,12 @@
+com\mycompany\ciphergaming\helper\Helper.class
+com\mycompany\ciphergaming\entities\Category.class
+com\mycompany\ciphergaming\dao\CategoryDao.class
+com\mycompany\ciphergaming\dao\UserDao.class
 com\mycompany\ciphergaming\servlets\RegisterServlet.class
 com\mycompany\ciphergaming\entities\Product.class
-com\mycompany\ciphergaming\entities\Category.class
 com\mycompany\ciphergaming\helper\FactoryProvider.class
 com\mycompany\ciphergaming\servlets\LoginServlet.class
 com\mycompany\ciphergaming\servlets\ProductOperationServlet.class
 com\mycompany\ciphergaming\servlets\LogoutServlet.class
-com\mycompany\ciphergaming\dao\CategoryDao.class
 com\mycompany\ciphergaming\dao\ProductDao.class
-com\mycompany\ciphergaming\dao\UserDao.class
 com\mycompany\ciphergaming\entities\User.class

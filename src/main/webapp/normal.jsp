@@ -26,4 +26,5 @@
         <%@include file="components/navbar.jsp" %>
         <h1>Regular User Page</h1>
     </body>
+    <%@include file="components/common_modals.jsp" %>
 </html>

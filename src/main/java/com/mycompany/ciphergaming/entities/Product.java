@@ -107,5 +107,12 @@ public class Product {
         this.category = category;
     }
     
+    //calculate price after discount
+    public int getPriceAfterApplyingDiscount()
+    {
+        int d=(int)((this.getpDiscount()/100.0)*this.getpPrice());
+        int price=this.getpPrice()-d;
+        return price;
+    }
     
 }
