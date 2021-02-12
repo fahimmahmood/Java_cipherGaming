@@ -74,7 +74,7 @@
                             <% for (Product product : list) {%>
 
                             <div class="card text-center" style="width: 18rem;">
-                                <img src="<%= product.getpPhoto()%>" class="card-img-top" alt="<%= product.getpName()%>">
+                                <img src="img/<%= product.getpPhoto()%>" class="card-img-top" alt="<%= product.getpName()%>">
                                 <div class="card-body">
                                     <h5 class="card-title"><%= product.getpName()%></h5>
                                     <p class="card-text">&#2547 <del><%= product.getpPrice()%></del> </p>
