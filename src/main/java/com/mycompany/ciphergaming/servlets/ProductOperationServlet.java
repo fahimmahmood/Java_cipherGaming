@@ -78,7 +78,19 @@ public class ProductOperationServlet extends HttpServlet {
                 ProductDao pDao = new ProductDao(FactoryProvider.getFactory());
                 int pId = -1;
                 pId = pDao.saveProduct(p);
-
+                
+                String path = request.getRealPath("img/") + part.getSubmittedFileName();
+                
+                FileOutputStream fos = new FileOutputStream(path);
+                InputStream is = part.getInputStream();
+                
+                byte []data = new byte[is.available()];
+                
+                is.read(data);
+                fos.write(data);
+                fos.close();
+                
+                
                 if (pId != -1) {
                     HttpSession httpsession = request.getSession();
                     httpsession.setAttribute("message", pName + " added as a product to " + category.getCategoryTitle() + " category successfully");
